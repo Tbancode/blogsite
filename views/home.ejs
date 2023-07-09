@@ -1,0 +1,26 @@
+<%- include('partials/header'); -%>
+
+<h1>Home</h1>
+<p> <%=Content%> </p>
+
+
+
+<div class="con">
+<% posts.forEach(function(object){ %>
+
+
+  <h1> <%= object.name %> </h1>
+  <p> <%= object.content.slice(0, 100) + ' ...' %> <a name="link" href="/post/<%= object._id %>">Read more</a> </p>
+  <form  action="/delete/<%= object._id %>" method="post" >
+  <button type="submit" name="delete" value="" class="btn btn-info">Delete</button>
+
+
+
+</form>
+
+<% }) %>
+
+</div>
+<!-- <p>  </p> -->
+
+<%- include('partials/footer'); -%>

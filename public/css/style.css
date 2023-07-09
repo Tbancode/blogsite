@@ -1,0 +1,53 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Ysabeau Infant', sans-serif; */
+
+#hov, p {
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#hov:hover {
+  color: rgb(80,199,199);
+}
+
+.con {
+  width: 300px;
+  float: left;
+}
+
+::-webkit-scrollbar{
+  width: 7px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: powderblue;
+  border-radius: 25%;
+}
+
+.connet{
+  overflow: hidden;
+  border-radius: 10%;
+  height: 300px;
+  background-color: rgba(171, 171, 171, 0.1);
+  overflow-y: scroll;
+  float: right;
+  padding: 20px ;
+}
+
+.footer-padding{
+  height: 570px;
+
+}
+
+.footer{
+  text-align: center;
+  background-color: grey;
+  height: 45px;
+  padding: 15px 0 ;
+}
